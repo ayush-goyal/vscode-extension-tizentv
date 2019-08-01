@@ -308,7 +308,7 @@ var launchTarget = (function() {
                 setVconfCommand = SDB_PATH + SPACE + SDB_OPT_SERIAL + SPACE + 'shell 0 setRWIAppID' + SPACE + appId;      
             }
             logger.debug(moduleName, 'setVconfCommand:' + setVconfCommand);
-            innerProcess.execSync(setVconfCommand);
+            //innerProcess.execSync(setVconfCommand);
 
             //Uninstall package 
             var uninstallCommand =  SDB_PATH + SPACE + SDB_OPT_SERIAL + SPACE + WAS_COMMAND_UNINSTALL + SPACE + appId;
